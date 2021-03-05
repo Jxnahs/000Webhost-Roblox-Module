@@ -1,4 +1,4 @@
-# Only certain people can use this command you can also change the name of the roles
+# Game ban and Game unban command. Only the people with certain roles can use this command but you can always change this. EG: @commands.has_any_role('Owner')
 
 
 import requests
