@@ -1,6 +1,10 @@
+
 <?php
 
-$database = $_GET['name'];
+$path = "DataStores/$name";
 
-mkdir("DataStores/$name", 0700);
+if (!mkdir($path, 0777, true)) {
+    die('Error');
+}
+
 ?>
