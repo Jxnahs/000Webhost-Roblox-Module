@@ -6,7 +6,7 @@ import discord
 from discord.ext import commands
 
 
-Webhost = "https://robloxdatastoreapi.000webhostapp.com/"
+Webhost = "" # Your 000webhost url
 
 
 ApiUrl = "https://api.roblox.com/"
