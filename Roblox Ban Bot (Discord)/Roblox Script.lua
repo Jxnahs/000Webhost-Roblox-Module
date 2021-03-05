@@ -1,4 +1,4 @@
-local Data = require(game:GetService("ServerScriptService"):WaitForChild('000Webhost'))
+local Data = require(game:GetService("ServerScriptService"):WaitForChild('000Webhost')) -- Change 000Webhost to the name of the module script
 local Players = game:GetService("Players")
 
 
