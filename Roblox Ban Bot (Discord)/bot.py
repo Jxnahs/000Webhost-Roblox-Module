@@ -12,16 +12,16 @@ Webhost = "" # Your 000webhost url
 ApiUrl = "https://api.roblox.com/"
 
 
-bot = commands.Bot(command_prefix=';',help_command=None)
+bot = commands.Bot(command_prefix=';',help_command=None) # Change the prefix here
 
 @bot.event
 async def on_ready():
     print("--- Bot is online! --- ")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Jonah's thing"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="Jonah's thing")) # Change activity here
 
 
 @bot.command()
-@commands.has_any_role('Creators', 'Data Manager')
+@commands.has_any_role('Creators', 'Data Manager') # You can change role names
 async def gameban(ctx, username=None):
     if username == None:
         await ctx.send("Please provide the persons username!")
@@ -45,7 +45,7 @@ async def gameban_error(ctx, error):
 
 
 @bot.command()
-@commands.has_any_role('Creators', 'Data Manager')
+@commands.has_any_role('Creators', 'Data Manager') # You can change role names
 async def gameunban(ctx, username=None):
     if username == None:
         await ctx.send("Please provide the persons username!")
@@ -74,4 +74,4 @@ async def gameunban_error(ctx, error):
 
 
 
-bot.run("token")
+bot.run("token") # Get your bot token here 
